@@ -6,10 +6,10 @@ import org.springframework.data.elasticsearch.repository.config.EnableElasticsea
 //https://docs.spring.io/spring-data/elasticsearch/docs/current-SNAPSHOT/reference/html/#reference
 @SpringBootApplication
 @EnableElasticsearchRepositories
-public class DemoElasticApplication {
+public class ArtizElasticApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoElasticApplication.class, args);
+		SpringApplication.run(ArtizElasticApplication.class, args);
 	}
 
 }

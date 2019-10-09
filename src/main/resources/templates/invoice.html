@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" media="all"
+          href="static/css/css/bootstrap.css" th:href="@{static/css/css/bootstrap.css}"/>
+    <title th:text="${'Invoice '+ invoice.numerator + ':' + 'details'}">Invoice #F2015-6 Template</title>
+</head>
+<body>
+
+<p>Envelope icon: <span class="glyphicon glyphicon-envelope"></span></p>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body p-0">
+                    <div class="row p-5">
+                        <div class="col-md-6">
+                            <img src="http://via.placeholder.com/400x90?text=logo"/>
+                        </div>
+
+                        <div class="col-md-6 text-right">
+                            <p class="font-weight-bold mb-1" th:text="${'Invoice '+invoice.numerator}">Invoice #550</p>
+                            <p class="text-muted">Due to: 4 Dec, 2019</p>
+                        </div>
+                    </div>
+
+                    <hr class="my-5"/>
+                    <hr class="my-5"/>
+
+                    <div class="row pb-5 p-5">
+                        <div class="col-md-6">
+                            <p class="font-weight-bold mb-4">Client Information</p>
+                            <p class="mb-1" th:text="${invoice.customerName}">John Doe, Mrs Emma Downson</p>
+                            <p class="mb-1" th:text="${invoice.customerAdress}">Berlin, Germany</p>
+                        </div>
+
+                        <div class="col-md-6 text-right">
+                            <p class="font-weight-bold mb-4">Payment Details</p>
+                            <p class="mb-1"><span class="text-muted" th:text="${invoice.customerVatnumber}">VAT: </span> 1425782</p>
+                            <p class="mb-1"><span class="text-muted" >Payment Type: </span> Bank transfert</p>
+                        </div>
+                    </div>
+
+                    <div class="row p-5">
+                        <div class="col-md-12">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th class="border-1 text-uppercase small font-weight-bold">Description</th>
+                                    <th class="border-1 text-uppercase small font-weight-bold">Quantity</th>
+                                    <th class="border-1 text-uppercase small font-weight-bold">Unit Cost</th>
+                                    <th class="border-1 text-uppercase small font-weight-bold">Total</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td th:text="${invoice.description}">Sofware engineering : Bank account manage</td>
+                                    <td th:text="${invoice.workeddays}">Number of worked days</td>
+                                    <td th:text="${#numbers.formatCurrency(invoice.dailywage)}">Daily price</td>
+                                    <td th:text="${#numbers.formatCurrency(invoice.workeddays * invoice.dailywage)}">Total</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="badge">
+                            <div class="mb-2">Grand Total</div>
+                            <div class="h2" th:text="${#numbers.formatCurrency(invoice.workeddays * invoice.dailywage)}">$234,234</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <table>
+        <tr>
+            <td><span class="barcode">*TEST BARCODE*</span></td>
+        </tr>
+    </table>
+
+</div>
+</body>
+</html>
