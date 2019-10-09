@@ -8,10 +8,12 @@
 		<version>2.1.7.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
 	<groupId>com.example</groupId>
 	<artifactId>demo-elastic</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>demo-elastic</name>
+
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -45,11 +47,31 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-gcp-starter</artifactId>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
+
+
+
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.9.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.9.2</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.elasticsearch</groupId>
 			<artifactId>elasticsearch</artifactId>
 			<version>${elasticsearch.version}</version>
-
 		</dependency>
 
 		<dependency>
@@ -66,6 +88,20 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+		     <groupId>org.springframework.security</groupId>
+		     <artifactId>spring-security-oauth2-client</artifactId>
+		</dependency>
+		<dependency>
+			     <groupId>org.springframework.security</groupId>
+			     <artifactId>spring-security-oauth2-jose</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.modelmapper</groupId>
+			<artifactId>modelmapper</artifactId>
+			<version>2.3.2</version>
 		</dependency>
 
 

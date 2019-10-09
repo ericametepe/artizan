@@ -4,7 +4,7 @@ import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 
-@Document(indexName = "artiz", type = "jobbers")
+@Document(indexName = "artisa", type = "jobber")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -15,6 +15,9 @@ public class Jobber {
     @Id
     private String id;
     private String title;
-    private String author;
-    private String releaseDate;
+    private String fname;
+    private String lname;
+    private String login;
+    private String role;
 }
+
