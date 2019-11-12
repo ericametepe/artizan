@@ -11,7 +11,11 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.UUID;
 
+<<<<<<< HEAD
 import static org.junit.Assert.assertNotNull;
+=======
+import static org.junit.Assert.*;
+>>>>>>> af5cb26e20d1bdaaadc18d16676429ef37e81df9
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = ArtizElasticApplication.class)
 public class JobberServiceImplTest {

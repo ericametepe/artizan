@@ -2,10 +2,14 @@ package com.keya.demoelastic.artiz.domaine;
 
 import lombok.*;
 
+<<<<<<< HEAD
 import javax.validation.constraints.AssertTrue;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
+=======
+import javax.validation.constraints.*;
+>>>>>>> af5cb26e20d1bdaaadc18d16676429ef37e81df9
 import java.time.LocalDateTime;
 
 @Getter

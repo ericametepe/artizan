@@ -1,16 +1,25 @@
 package com.keya.demoelastic.artiz.exposition;
 
+<<<<<<< HEAD
 import com.keya.demoelastic.artiz.application.SubscriptionManager;
 import com.keya.demoelastic.artiz.domaine.Subscriber;
+=======
+import com.keya.demoelastic.artiz.domaine.Subscriber;
+import com.keya.demoelastic.artiz.application.SubscriptionManager;
+>>>>>>> af5cb26e20d1bdaaadc18d16676429ef37e81df9
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+<<<<<<< HEAD
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+=======
+import org.springframework.web.bind.annotation.*;
+>>>>>>> af5cb26e20d1bdaaadc18d16676429ef37e81df9
 
 import java.util.List;
 import java.util.stream.Collectors;

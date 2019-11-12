@@ -76,10 +76,20 @@
 			<artifactId>spring-cloud-gcp-starter</artifactId>
 		</dependency>
 
+<<<<<<< HEAD
 		<!--<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>-->
+=======
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
+
+
+>>>>>>> af5cb26e20d1bdaaadc18d16676429ef37e81df9
 
 		<dependency>
 			<groupId>io.springfox</groupId>
@@ -113,6 +123,20 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+		     <groupId>org.springframework.security</groupId>
+		     <artifactId>spring-security-oauth2-client</artifactId>
+		</dependency>
+		<dependency>
+			     <groupId>org.springframework.security</groupId>
+			     <artifactId>spring-security-oauth2-jose</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.modelmapper</groupId>
+			<artifactId>modelmapper</artifactId>
+			<version>2.3.2</version>
 		</dependency>
 
 

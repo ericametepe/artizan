@@ -4,7 +4,11 @@ import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 
+<<<<<<< HEAD
 @Document(indexName = "jobbing", type = "jobber")
+=======
+@Document(indexName = "artisa", type = "jobber")
+>>>>>>> af5cb26e20d1bdaaadc18d16676429ef37e81df9
 @Getter
 @Setter
 @NoArgsConstructor

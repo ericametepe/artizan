@@ -6,6 +6,12 @@ import org.springframework.data.elasticsearch.annotations.Document;
 import org.springframework.data.elasticsearch.annotations.Field;
 import org.springframework.data.elasticsearch.annotations.FieldType;
 
+<<<<<<< HEAD
+=======
+import javax.validation.constraints.AssertTrue;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
+>>>>>>> af5cb26e20d1bdaaadc18d16676429ef37e81df9
 import javax.validation.constraints.Size;
 import java.time.LocalDateTime;
 
